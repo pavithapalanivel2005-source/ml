@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv(r"C:\ml\Iris.csv")
+print(data)
+
+mn = np.mean(data['SepalLengthCm'])
+md = np.median(data['SepalLengthCm'])
+mod = data['SepalLengthCm'].mode()[0]
+sd = np.std(data['SepalLengthCm'])
+var = np.var(data['SepalLengthCm'])
+
+print("Mean:", mn)
+print("Median:", md)
+print("Mode:", mod)
+print("Standard Deviation:", sd)
+print("Variance:", var)
+
+
